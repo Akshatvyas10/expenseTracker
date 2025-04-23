@@ -3,12 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "homepage": "https://Akshatvyas10.github.io/expenseTracker",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  
+  "dev": "vite",
+  "build": "tsc -b && vite build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+}
+  ,
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
     "@reduxjs/toolkit": "^2.6.1",
@@ -16,6 +21,7 @@
     "axios": "^1.8.4",
     "chart.js": "^4.4.8",
     "date-fns": "^4.1.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^19.0.0",
@@ -28,8 +34,7 @@
     "sweetalert2": "^11.6.13",
     "zod": "^3.24.2"
   },
-  "homepage": "https://github.com/Akshatvyas10/expenseTracker.git"
-,
+ 
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@types/react": "^19.0.10",
