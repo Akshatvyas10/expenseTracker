@@ -83,7 +83,7 @@ export const SideNavBar: React.FC = () => {
 
     return (
         <div className="hidden lg:flex h-screen text-left dark:bg-gray-900 dark:text-gray-400">
-            <div className="lg:w-[250px] md:w-1/5 dark:bg-gray-900 dark:text-gray-400 border-r-2 shadow-md text-black p-4 fixed top-16 left-0 z-10 h-screen">
+            <div className="lg:w-[250px] md:w-1/5 dark:bg-gray-900 dark:text-gray-400 border-r-2 dark:border-gray-800 shadow-md text-black p-4 fixed top-16 left-0 z-10 h-screen">
                 <div className='w-1/2 text-center m-auto my-10 cursor-pointer'>
                     <form >
                         <div className="profile flex justify-center py-4">
